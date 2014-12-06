@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/exercise 1 Dropwizard/exercise 1 Dropwizard.iml" filepath="$PROJECT_DIR$/exercise 1 Dropwizard/exercise 1 Dropwizard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercise 1 Dropwizard completed/exercise 1 Dropwizard completed.iml" filepath="$PROJECT_DIR$/exercise 1 Dropwizard completed/exercise 1 Dropwizard completed.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercise 2 Communication consumer completed/exercise 2 Communication consumer completed.iml" filepath="$PROJECT_DIR$/exercise 2 Communication consumer completed/exercise 2 Communication consumer completed.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercise 2 Communication producer/exercise 2 Communication producer.iml" filepath="$PROJECT_DIR$/exercise 2 Communication producer/exercise 2 Communication producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercise 2 Communication producer completed/exercise 2 Communication producer completed.iml" filepath="$PROJECT_DIR$/exercise 2 Communication producer completed/exercise 2 Communication producer completed.iml" />
+    </modules>
+  </component>
+</project>
+
