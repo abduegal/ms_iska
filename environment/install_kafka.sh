@@ -4,7 +4,7 @@
 if [ -d "/home/vagrant/Apps/Kafka" ]; then
     echo "Start Kafka"
     cd /home/vagrant/Apps/Kafka/kafka_2.11-0.8.2-beta
-    sudo bin/kafka-server-start.sh config/server.properties
+    sudo bin/kafka-server-start.sh config/server.properties &
 else
     echo "Installing Kafka"
     # install
@@ -16,5 +16,5 @@ else
     chown -R vagrant /home/vagrant/Apps/Kafka
     # start
     cd /home/vagrant/Apps/Kafka/kafka_2.11-0.8.2-beta
-    sudo bin/kafka-server-start.sh config/server.properties
+    sudo bin/kafka-server-start.sh config/server.properties &
 fi

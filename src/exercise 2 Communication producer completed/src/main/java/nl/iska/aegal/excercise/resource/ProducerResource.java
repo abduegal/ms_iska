@@ -19,26 +19,22 @@ public class ProducerResource {
     private final String topic;
     private final ProducerConfig producerConfig;
 
-    public ProducerResource(String topic) {
+    public ProducerResource(String topic, ProducerConfig producerConfig) {
         this.topic = topic;
-        Properties props = new Properties();
-
-        props.put("metadata.broker.list", "localhost:9092");
-        props.put("serializer.class", "kafka.serializer.StringEncoder");
-        props.put("request.required.acks", "1");
-
-        producerConfig = new ProducerConfig(props);
+        this.producerConfig = producerConfig;
     }
 
     @GET
-    @Path("{message}")
-    public void sendMessage(@PathParam("message") String message) {
+    @Path("send/{message}")
+    public String sendMessage(@PathParam("message") String message) {
         Producer<String, String> producer = new Producer<>(producerConfig);
 
         KeyedMessage<String, String> data = new KeyedMessage<>(topic, message);
         producer.send(data);
 
         producer.close();
+
+        return "ok";
     }
 
 }

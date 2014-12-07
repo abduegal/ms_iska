@@ -6,9 +6,9 @@ import kafka.producer.ProducerConfig;
 import java.util.Properties;
 
 /**
- * Created by vagrant on 12/6/14.
+ * Created by vagrant on 12/7/14.
  */
-public class ProducerConfiguration extends Configuration {
+public class ProducerConfiguration extends Configuration{
 
     private String topic;
 
@@ -27,4 +27,5 @@ public class ProducerConfiguration extends Configuration {
         props.put("request.required.acks", "1");
         return new ProducerConfig(props);
     }
+
 }

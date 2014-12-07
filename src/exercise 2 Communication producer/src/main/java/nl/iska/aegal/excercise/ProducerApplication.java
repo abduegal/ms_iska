@@ -6,7 +6,7 @@ import io.dropwizard.setup.Environment;
 import nl.iska.aegal.excercise.resource.ProducerResource;
 
 /**
- * Created by vagrant on 12/6/14.
+ * Created by vagrant on 12/7/14.
  */
 public class ProducerApplication extends Application<ProducerConfiguration> {
 
@@ -20,7 +20,7 @@ public class ProducerApplication extends Application<ProducerConfiguration> {
     }
 
     @Override
-    public void run(ProducerConfiguration config, Environment environment) throws Exception {
-        environment.jersey().register(new ProducerResource(config.getTopic(), config.getProducerConfig()));
+    public void run(ProducerConfiguration configuration, Environment environment) throws Exception {
+        environment.jersey().register(new ProducerResource(configuration.getTopic(), configuration.getProducerConfig()));
     }
 }

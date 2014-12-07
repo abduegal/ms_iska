@@ -22,13 +22,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="excercise 3 api-gateway" />
         <module name="exercise 1 Dropwizard" />
         <module name="exercise 1 Dropwizard completed" />
         <module name="exercise 2 Communication consumer completed" />
         <module name="exercise 2 Communication producer" />
         <module name="exercise 2 Communication producer completed" />
+        <module name="exercise 3 frontend" />
+        <module name="exercise 3 service 1" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="exercise 2 Communication consumer completed" target="1.8" />
+      <module name="exercise 2 Communication producer" target="1.8" />
+      <module name="exercise 2 Communication producer completed" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 

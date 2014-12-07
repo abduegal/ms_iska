@@ -16,11 +16,12 @@ public class ConsumerApplication extends Application<ConsumerConfiguration> {
 
     @Override
     public void initialize(Bootstrap<ConsumerConfiguration> bootstrap) {
-
     }
 
     @Override
     public void run(ConsumerConfiguration configuration, Environment environment) throws Exception {
-        environment.jersey().register(new ConsumerResource(configuration.getTopic()));
+        ConsumerListener.start(configuration.getTopic());
+
+        environment.jersey().register(ConsumerResource.class);
     }
 }
