@@ -1,5 +1,9 @@
 topic: messages_completed
 
+discovery:
+    serviceName: Producer
+    namespace: myapp
+
 server:
   applicationConnectors:
   - type: http

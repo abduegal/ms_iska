@@ -28,7 +28,9 @@
         <module name="exercise 2 Communication consumer completed" />
         <module name="exercise 2 Communication producer" />
         <module name="exercise 2 Communication producer completed" />
-        <module name="exercise 3 frontend" />
+        <module name="exercise 3 api-gateway" />
+        <module name="exercise 3 consumer" />
+        <module name="exercise 3 producer" />
         <module name="exercise 3 service 1" />
       </profile>
     </annotationProcessing>
@@ -36,6 +38,9 @@
       <module name="exercise 2 Communication consumer completed" target="1.8" />
       <module name="exercise 2 Communication producer" target="1.8" />
       <module name="exercise 2 Communication producer completed" target="1.8" />
+      <module name="exercise 3 api-gateway" target="1.8" />
+      <module name="exercise 3 consumer" target="1.8" />
+      <module name="exercise 3 producer" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
